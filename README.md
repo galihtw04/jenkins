@@ -18,7 +18,7 @@ kubectl create namespace devops-tools
 - create ServiceAccount
 ```
 ---
-cat << EOF > serviceaccount.yaml
+cat << 'EOF' > serviceaccount.yaml
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
@@ -57,7 +57,7 @@ kubectl apply -f serviceaccount.yaml
 
 - create volume
 ```
-cat << EOF > pvc.yaml
+cat << 'EOF' > pvc.yaml
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
