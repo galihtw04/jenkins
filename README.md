@@ -17,7 +17,6 @@ kubectl create namespace devops-tools
 
 - create ServiceAccount
 ```
----
 cat << 'EOF' > serviceaccount.yaml
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
