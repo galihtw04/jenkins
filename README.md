@@ -15,6 +15,11 @@ mkdir ~/jenkins && cd ~/jenkins
 kubectl create namespace devops-tools
 ```
 
+```
+kubectl get ns
+```
+
+
 - create ServiceAccount
 ```
 cat << 'EOF' > serviceaccount.yaml
@@ -54,6 +59,12 @@ EOF
 kubectl apply -f serviceaccount.yaml
 ```
 
+```
+kubectl get clusterrole,clusterrolebindings,serviceaccounts -A | grep jenkins
+```
+![image](https://github.com/galihtw04/jenkins/assets/96242740/f675a9ca-e438-4531-b946-f30e045b78ea)
+
+
 - create volume
 ```
 cat << 'EOF' > pvc.yaml
@@ -75,6 +86,12 @@ EOF
 ```
 kubectl apply -f
 ```
+
+```
+kubectl get pvc -n devops-tools
+ls /nfs-share/
+```
+![image](https://github.com/galihtw04/jenkins/assets/96242740/2005ba32-1896-4e41-b1ea-8832ffcb3bee)
 
 - create deployment
 ```
@@ -143,6 +160,13 @@ EOF
 kubectl apply -f deployment.yaml
 ```
 
+```
+kubectl get deployments -n devops-tools
+kubectl get pods -n devops-tools
+```
+![image](https://github.com/galihtw04/jenkins/assets/96242740/88c9251e-273a-4e9f-a9c5-5ecf9686eda6)
+
+
 - create service nodeport
 ```
 cat << 'EOF' > service.yaml
@@ -166,7 +190,11 @@ spec:
 EOF
 ```
 
-
 ```
 kubectl apply -f service.yaml
 ```
+
+```
+kubectl get svc -n devops-tools
+```
+![image](https://github.com/galihtw04/jenkins/assets/96242740/74d3d5df-bff8-4b4c-85c7-fb1030d660ef)
