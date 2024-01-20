@@ -11,3 +11,6 @@ cari pada bagian pipline
 
 ![image](https://github.com/galihtw04/jenkins/assets/96242740/909767fd-4e1c-48d0-9de7-6c5584ac13ea)
 > sesuaikan branch kalian
+
+![image](https://github.com/galihtw04/jenkins/assets/96242740/fdab9b83-140f-4888-96ea-3f07e05a7126)
+> done
