@@ -7,7 +7,8 @@ new item > name > pipline > ok
 
 cari pada bagian pipline
 ![image](https://github.com/galihtw04/jenkins/assets/96242740/d7271ef0-9be7-4580-b048-225bb28efd73)
-> pada credintials kita tidak masukan karena repo kita public
+> pada credintials kita tidak masukan karena repo kita public, https://github.com/galihtw04/build-test.git
+
 
 ![image](https://github.com/galihtw04/jenkins/assets/96242740/909767fd-4e1c-48d0-9de7-6c5584ac13ea)
 > sesuaikan branch kalian
@@ -15,7 +16,9 @@ cari pada bagian pipline
 ![image](https://github.com/galihtw04/jenkins/assets/96242740/fdab9b83-140f-4888-96ea-3f07e05a7126)
 > done
 
+
 check 
+
 ![image](https://github.com/galihtw04/jenkins/assets/96242740/d1b364ca-fdc2-4690-8e62-9949db792517)
 
 ![image](https://github.com/galihtw04/jenkins/assets/96242740/24691943-f836-414b-9713-6fe10226fc27)
